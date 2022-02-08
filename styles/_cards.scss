@@ -1,0 +1,114 @@
+@mixin id-card {
+    margin-top: .5rem;
+  border-radius: 15px;
+  position: relative;
+
+  .card {
+    .image-card {
+      border-radius: 15px;
+      position: relative;
+      display: flex;
+      justify-content: end;
+      overflow: hidden;
+      background-color: $Light-red;
+    }
+    svg {
+      position: relative;
+      top: -10px;
+      right: 1rem;
+    }
+  }
+  .info-card {
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-between;
+    background-color: $Dark-blue;
+    border-radius: 15px;
+    position: relative;
+    top: -2rem;
+
+    .current {
+        p {
+            &:first-child {
+                font-weight: 500;
+                margin-bottom: .3rem;
+            }
+
+            &:last-child {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .previous {
+        text-align: right;
+        color: #9295c5;
+
+        p{
+            &:first-child {
+                margin-bottom: .8rem;
+                font-weight: 500;
+            }
+
+            &:last-child {
+                font-size: .9rem;
+            }
+        }
+    }
+  }
+}
+
+#work-card {
+  @include id-card;
+  
+}
+
+#play-card {
+    @include id-card;
+    
+    .card {
+        .image-card {
+            background-color:$Soft-blue;
+        }
+    }
+}
+
+#study-card {
+    @include id-card;
+    
+    .card {
+        .image-card {
+            background-color:$Light-red;
+        }
+    }
+}
+
+#exercise-card {
+    @include id-card;
+    
+    .card {
+        .image-card {
+            background-color: $Lime-green;
+        }
+    }
+}
+
+#social-card {
+    @include id-card;
+    
+    .card {
+        .image-card {
+            background-color:$Violet;
+        }
+    }
+}
+
+#self-care-card {
+    @include id-card;
+    
+    .card {
+        .image-card {
+            background-color: $Soft-orange;
+        }
+    }
+}
