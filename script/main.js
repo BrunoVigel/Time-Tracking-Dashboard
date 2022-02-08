@@ -8,6 +8,7 @@ async function setDay() {
 
 
     // Work Card
+    document.querySelector('#work-card .title').innerText = `${dadosJSON[0].title}`
     const workCurrent = document.querySelector('#work-card .current-hours');
     const workPrevious = document.querySelector('#work-card .previous-hours');
 
@@ -15,6 +16,7 @@ async function setDay() {
     workPrevious.innerText = `Yesterday - ${dadosJSON[0].timeframes.daily.previous}hrs`
 
     // Play Card
+    document.querySelector('#play-card .title').innerText = `${dadosJSON[1].title}`
     const playCurrent = document.querySelector('#play-card .current-hours');
     const playPrevious = document.querySelector('#play-card .previous-hours')
 
@@ -22,6 +24,7 @@ async function setDay() {
     playPrevious.innerText = `Yesterday - ${dadosJSON[1].timeframes.daily.previous}hrs`
 
     // Study Card
+    document.querySelector('#study-card .title').innerText = `${dadosJSON[2].title}`
     const studyCurrent = document.querySelector('#study-card .current-hours');
     const studyPrevious = document.querySelector('#study-card .previous-hours')
 
@@ -29,6 +32,7 @@ async function setDay() {
     studyPrevious.innerText = `Yesterday - ${dadosJSON[2].timeframes.daily.previous}hrs`
 
     // Exercise Card
+    document.querySelector('#exercise-card .title').innerText = `${dadosJSON[03].title}`
     const exerciseCurrent = document.querySelector('#exercise-card .current-hours');
     const exercisePrevious = document.querySelector('#exercise-card .previous-hours')
 
@@ -36,6 +40,7 @@ async function setDay() {
     exercisePrevious.innerText = `Yesterday - ${dadosJSON[3].timeframes.daily.previous}hrs`
 
     // Social Card
+    document.querySelector('#social-card .title').innerText = `${dadosJSON[04].title}`
     const socialCurrent = document.querySelector('#social-card .current-hours');
     const socialPrevious = document.querySelector('#social-card .previous-hours')
 
@@ -43,6 +48,7 @@ async function setDay() {
     socialPrevious.innerText = `Yesterday - ${dadosJSON[4].timeframes.daily.previous}hrs`
 
      // Self care Card
+    document.querySelector('#self-care-card .title').innerText = `${dadosJSON[5].title}`
      const selfCareCurrent = document.querySelector('#self-care-card .current-hours');
      const selfCarePrevious = document.querySelector('#self-care-card .previous-hours')
 
